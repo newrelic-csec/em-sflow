@@ -19,8 +19,15 @@ module EventMachine
           end
         end
 
-        datagram = Datagram.new(data)
-        
+        datagram = Sflow.new
+        #puts data.each_byte.map { |x| x.to_s(16).rjust(2, '0') }.join(" ")
+        begin
+          #BinData::trace_reading do
+            datagram.read(data)
+          #end
+        rescue Exception => e
+          puts e.message
+        end
         @callbacks.each do |callback|
           callback.call datagram
         end

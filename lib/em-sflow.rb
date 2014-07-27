@@ -2,20 +2,31 @@ require "em-sflow/version"
 
 require "eventmachine"
 require "ipaddr"
+require "bindata"
 
 require "em-sflow/collector"
 require "em-sflow/datagram_handler"
-require "em-sflow/binary_string"
-require "em-sflow/flow_record"
-require "em-sflow/packet/datagram"
-require "em-sflow/packet/flow_sample"
-require "em-sflow/packet/expanded_flow_sample"
-require "em-sflow/packet/counter_sample"
-require "em-sflow/packet/raw_packet_header"
-require "em-sflow/packet/generic_interface_counters"
-require "em-sflow/packet/ethernet_interface_counters"
-require "em-sflow/packet/ipv4_data"
-require "em-sflow/packet/ipv6_data"
+require "em-sflow/compound_types"
+
+require 'em-sflow/templates/tcp.rb'
+require 'em-sflow/templates/udp.rb'
+require 'em-sflow/templates/ipv4.rb'
+require 'em-sflow/templates/ether.rb'
+require 'em-sflow/templates/ipv4_data.rb'
+require 'em-sflow/templates/extended_router_data.rb'
+require 'em-sflow/templates/extended_switch_data.rb'
+require 'em-sflow/templates/raw_packet.rb'
+require 'em-sflow/templates/ethernet_counters.rb'
+require 'em-sflow/templates/if_counters.rb'
+require 'em-sflow/templates/tokenring_counters.rb'
+require 'em-sflow/templates/vg_counters.rb'
+require 'em-sflow/templates/vlan_counters.rb'
+require 'em-sflow/templates/counter_record_wrapper.rb'
+require 'em-sflow/templates/counter_sample.rb'
+require 'em-sflow/templates/flow_record.rb'
+require 'em-sflow/templates/flow_sample.rb'
+require 'em-sflow/templates/sample_wrapper.rb'
+require 'em-sflow/templates/sflow.rb'
 
 module EventMachine
   module SFlow
