@@ -3,6 +3,7 @@ class CounterRecordWrapper < BinData::Record
 
   bit20     :smi_entity
   bit12     :sflow_format
+  uint32    :counter_record_length
   choice    :counter_info, :selection => :sflow_format do
     if_counters            1
     ethernet_counters      2
