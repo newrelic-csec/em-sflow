@@ -10,6 +10,7 @@ require "em-sflow/compound_types"
 
 require 'em-sflow/templates/tcp.rb'
 require 'em-sflow/templates/udp.rb'
+require 'em-sflow/templates/icmp.rb'
 require 'em-sflow/templates/ipv4.rb'
 require 'em-sflow/templates/ether.rb'
 require 'em-sflow/templates/ipv4_data.rb'
