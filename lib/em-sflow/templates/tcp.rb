@@ -1,5 +1,3 @@
-module EventMachine
-  module SFlow
 class Tcp < BinData::Record
   endian :big
 
@@ -25,6 +23,5 @@ class Tcp < BinData::Record
   def options_length_in_bytes
     (doff - 5 ) * 4
   end
-end
-end
+
 end

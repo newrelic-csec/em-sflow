@@ -1,5 +1,3 @@
-module EventMachine
-  module SFlow
 class Ipv4_data < BinData::Record
   endian :big
   
@@ -12,6 +10,4 @@ class Ipv4_data < BinData::Record
   uint32  :tcp_flags
   uint32  :tos
 
-end
-end
 end

@@ -1,5 +1,3 @@
-module EventMachine
-  module SFlow
 class Udp < BinData::Record
   endian :big
 
@@ -8,6 +6,5 @@ class Udp < BinData::Record
   uint16 :len
   uint16 :checksum
   rest   :payload
-end
-end
+
 end

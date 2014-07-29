@@ -1,5 +1,3 @@
-module EventMachine
-  module SFlow
 class FlowRecord < BinData::Record
   endian :big
   bit20  :smi_entity
@@ -28,7 +26,4 @@ end
 
 class FlowRecords < BinData::Array
   flow_record
-end
-
-end
 end

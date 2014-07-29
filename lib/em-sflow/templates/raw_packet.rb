@@ -10,7 +10,6 @@ class RawPacket < BinData::Record
   def decode_raw_header
     decoded_header = Ether.new
     decoded_header.read(payload)
-    decoded_header
   end
 
 end

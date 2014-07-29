@@ -1,5 +1,3 @@
-module EventMachine
-  module SFlow
 class ExtendedSwitchData < BinData::Record
   endian      :big
 
@@ -7,7 +5,5 @@ class ExtendedSwitchData < BinData::Record
   uint32      :src_priority
   uint32      :dst_vlan
   uint32      :dst_priority
-end
-end
-end
 
+end
