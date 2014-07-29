@@ -1,5 +1,3 @@
-module EventMachine
-  module SFlow
   class Ether < BinData::Record
   hide :type_or_vlan, :original_ether_type
   IPV4 = 0x0800
@@ -32,6 +30,3 @@ module EventMachine
   end
 
 end
-end
-end
-
