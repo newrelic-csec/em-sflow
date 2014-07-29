@@ -1,5 +1,6 @@
 class EthernetCounters < BinData::Record
   endian :big
+
    uint32 :dot3StatsAlignmentErrors
    uint32 :dot3StatsFCSErrors
    uint32 :dot3StatsSingleCollisionFrames
@@ -13,4 +14,5 @@ class EthernetCounters < BinData::Record
    uint32 :dot3StatsFrameTooLongs
    uint32 :dot3StatsInternalMacReceiveErrors
    uint32 :dot3StatsSymbolErrors
+
 end

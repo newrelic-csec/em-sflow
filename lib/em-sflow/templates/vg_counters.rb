@@ -1,5 +1,6 @@
 class VgCounters < BinData::Record
   endian :big
+
   uint32 :dot12InHighPriorityFrames
   uint64 :dot12InHighPriorityOctets
   uint32 :dot12InNormPriorityFrames
@@ -14,4 +15,5 @@ class VgCounters < BinData::Record
   uint64 :dot12HCInHighPriorityOctets
   uint64 :dot12HCInNormPriorityOctets
   uint64 :dot12HCOutHighPriorityOctets
+
 end

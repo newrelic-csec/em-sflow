@@ -22,11 +22,11 @@ require 'em-sflow/templates/if_counters.rb'
 require 'em-sflow/templates/tokenring_counters.rb'
 require 'em-sflow/templates/vg_counters.rb'
 require 'em-sflow/templates/vlan_counters.rb'
-require 'em-sflow/templates/counter_record_wrapper.rb'
+require 'em-sflow/templates/counter_records.rb'
 require 'em-sflow/templates/counter_sample.rb'
 require 'em-sflow/templates/flow_record.rb'
 require 'em-sflow/templates/flow_sample.rb'
-require 'em-sflow/templates/sample_wrapper.rb'
+require 'em-sflow/templates/samples.rb'
 require 'em-sflow/templates/sflow.rb'
 
 module EventMachine
