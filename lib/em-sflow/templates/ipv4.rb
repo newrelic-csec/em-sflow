@@ -18,6 +18,7 @@ class Ipv4 < BinData::Record
   string :options, :read_length => :options_length_in_bytes
   buffer :payload, :length => :payload_length_in_bytes do
     choice :payload, :selection => :protocol do
+      icmp  1
       tcp   6
       udp   17
       rest  :default

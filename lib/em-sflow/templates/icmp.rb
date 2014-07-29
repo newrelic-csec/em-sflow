@@ -1,13 +1,8 @@
-module EventMachine
-  module SFlow
-class Udp < BinData::Record
+class Icmp < BinData::Record
   endian :big
 
-  uint16 :src_port
-  uint16 :dst_port
-  uint16 :len
+  uint8 :type
+  uint8 :code
   uint16 :checksum
-  rest   :payload
-end
-end
+  rest   :icmp_payload
 end
