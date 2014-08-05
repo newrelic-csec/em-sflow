@@ -1,5 +1,6 @@
 module EventMachine
   module SFlow
+
     class Collector
       def initialize args = {}
         args[:host] ||= "127.0.0.1"

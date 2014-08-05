@@ -31,6 +31,5 @@ require 'em-sflow/templates/sflow.rb'
 
 module EventMachine
   module SFlow
-    # Your code goes here...
   end
 end
