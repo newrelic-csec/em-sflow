@@ -23,7 +23,9 @@ module EventMachine
         #puts data.each_byte.map { |x| x.to_s(16).rjust(2, '0') }.join(" ")
         begin
           #BinData::trace_reading do
-            datagram.read(data)
+            unless data == 'default send string'
+              datagram.read(data)
+            end
           #end
         rescue Exception => e
           puts e.message
