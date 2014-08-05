@@ -25,8 +25,6 @@ module EventMachine
             datagram.read(data)
           #end
         rescue Exception => e
-          puts e.message
-          puts data.each_byte.map { |x| x.to_s(16).rjust(2, '0') }.join(" ")
           return
         end
         @callbacks.each do |callback|
